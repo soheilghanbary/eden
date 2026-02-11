@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/ui/button'
 import { Separator } from '@/ui/separator'
 
-const GITHUB_REPO_URL = 'https://github.com/soheilghanbary/naas'
-const COPYRIGHT_TEXT = `© ${new Date().getFullYear()} NaaS Stack - Soheil Ghanbary`
+const GITHUB_REPO_URL = 'https://github.com/soheilghanbary/eden'
+const COPYRIGHT_TEXT = `© ${new Date().getFullYear()} ${appConfig.name} Stack - Soheil Ghanbary`
 
 export default () => {
   return (
