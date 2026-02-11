@@ -1,10 +1,8 @@
 'use cache: private'
 import { cacheLife } from 'next/cache'
+import { api } from '@/shared/lib/api'
 
-const getMessage = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/hello`)
-  return await res.json()
-}
+const getMessage = async () => (await api.hello.get()).data
 
 export const MessageSSR = async () => {
   cacheLife('days')
