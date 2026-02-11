@@ -1,6 +1,6 @@
 import { treaty } from '@elysiajs/eden'
 import { createAuthClient } from 'better-auth/react'
-import type { App } from '@/app/api/[[...route]]/route'
+import type { App } from '@/server/main'
 
 const baseURL =
   typeof window !== 'undefined'
